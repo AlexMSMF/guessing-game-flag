@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jogo.css">
+    <script src="script/jogo.js"></script>
+
+</head>
+<body>
+    <div class= "container">
+        <h1>Guessing Game</h1>
+        <h2 id= "timeContent">60</h2>
+  
+
+    <label >
+        <input id="userInput" type="number">
+        <button id="addNumberButton">Jogar</button>    
+    </label>
+
+    <div class= "help">
+
+            <div class="list-content">
+                    <ul id="gameList">
+        
+        
+                    </ul>
+                </div>
+        <div class= help-content>
+            <img id="helpImage" width= "200" src="images/question.png" >
+        </div>
+        
+      
+    </div>
+
+    <div id="statusContent">
+
+    </div>
+
+    <label class= "level-selector">
+        <input type="radio" name = "level" value= "1"> Begginer
+    </label>
+   
+    <label >
+        <input type="radio" name = "level" value= "2" checked> Intermediate
+    </label>
+
+    <label >
+        <input type="radio" name = "level" value= "3"> Hardcore
+    </label>
+        
+
+    <button id="newGameButton">Novo Jogo</button>
+
+</div>
+
+
+<script>
+    setTimeout(function() {
+        console.log('TimeOut')
+    }, 5000);
+
+    
+    var i= 0;
+    var t= setInterval(function() {
+        console.log('Interval');
+        i++;
+
+        if (i == 5) {
+            clearInterval(t);
+        }
+    }, 2000);
+
+
+</script>
+   
+
+    
+</body>
+</html>
